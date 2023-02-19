@@ -56,7 +56,7 @@
 /*MAIN*/
 /*Carrusel Index*/
 .carousel-item img {
-  width: 100%;
+  width: auto;
   height: 60vh;
   margin-bottom: 0;
 }
@@ -189,6 +189,11 @@ footer {
     width: 100%;
     margin-bottom: 0;
     font-size: 16px;
+  }
+  .carousel-item img {
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 0;
   }
 }
 /*Aca empiezo con las paginas*/
@@ -524,6 +529,106 @@ footer {
   background-image: url(../recursos/Proyecto6.png);
 }
 
+/*Boton ver mas colapsable*/
+.btn {
+  width: 100%;
+  height: auto;
+  background-color: #FFD1C7;
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 0;
+  border: none;
+}
+
+.btn:hover {
+  font-weight: bold;
+  background-color: #FFB5A5;
+  color: black;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFF0EC;
+  -moz-columns: black;
+       columns: black;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.tira-vermas-img {
+  display: flex;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: center;
+}
+
+.vermas-img {
+  width: 30vw;
+  height: 30vw;
+  background-image: url(../recursos/vermas1.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  color: black;
+  background-color: #FFB5A5;
+  border-color: #FFB5A5;
+  box-shadow: 0 0 0 0.2rem #FFB5A5;
+}
+
+#imagentira1 {
+  background-image: url(../recursos/vermas1.png);
+}
+
+#imagentira2 {
+  background-image: url(../recursos/vermas2.png);
+}
+
+#imagentira3 {
+  background-image: url(../recursos/vermas3.png);
+}
+
+#imagentira4 {
+  background-image: url(../recursos/vermas4.png);
+}
+
+#imagentira5 {
+  background-image: url(../recursos/vermas5.png);
+}
+
+#imagentira6 {
+  background-image: url(../recursos/vermas6.png);
+}
+
+#imagentira7 {
+  background-image: url(../recursos/vermas7.png);
+}
+
+#imagentira8 {
+  background-image: url(../recursos/vermas8.png);
+}
+
+#imagentira9 {
+  background-image: url(../recursos/vermas9.png);
+}
+
+#imagentira10 {
+  background-image: url(../recursos/vermas10.png);
+}
+
+#imagentira11 {
+  background-image: url(../recursos/vermas11.png);
+}
+
+#imagentira12 {
+  background-image: url(../recursos/vermas12.png);
+}
+
 @media (min-width: 767px) {
   #proy1 {
     display: flex;
@@ -549,48 +654,25 @@ footer {
     width: 100%;
     height: 250px;
   }
+  .card {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+  .info-vermas {
+    width: 25%;
+  }
+  .tira-vermas-img {
+    width: 70%;
+    height: auto;
+  }
+  .vermas-img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
-/*Boton ver mas colapsable*/
-.btn {
-  width: 100%;
-  height: auto;
-  background-color: #FFD1C7;
-  color: black;
-  text-align: center;
-  font-size: 18px;
-  border-radius: 0;
-  border: none;
-}
-
-.btn:hover {
-  font-weight: bold;
-  background-color: #FFB5A5;
-  color: black;
-}
-
-.card {
-  background-color: #FFF0EC;
-  -moz-columns: black;
-       columns: black;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.vermas-img {
-  width: 100%;
-  height: 120px;
-  background-image: url(../recursos/tira1.JPG);
-  background-position: center;
-  background-size: cover;
-}
-
-.btn-primary.focus, .btn-primary:focus {
-  color: black;
-  background-color: #FFB5A5;
-  border-color: #FFB5A5;
-  box-shadow: 0 0 0 0.2rem #FFB5A5;
-}
-
 /*PAGINA CONTACTO*/
 .introduccion-formulario {
   background-color: white;

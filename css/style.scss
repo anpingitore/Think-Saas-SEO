@@ -47,10 +47,11 @@
 
 /*Carrusel Index*/
 
-.carousel-item img { width: 100%;
+.carousel-item img { width: auto;
                      height: 60vh;
                      margin-bottom: 0;    
                    }
+
 .carousel-caption {color: white;} 
 
 /*FOOTER*/
@@ -149,6 +150,10 @@ footer {width:100%;
                            .footer1 p {width: 100%;
                                        margin-bottom:0;
                                        font-size: 16px;}
+                           .carousel-item img { width: 100%;
+                                        height: 60vh;
+                                        margin-bottom: 0;    
+                                      }
                           }
 
 /*Aca empiezo con las paginas*/
@@ -419,26 +424,6 @@ footer {width:100%;
 #Proyecto-destacado3 {background-image: url(../recursos/Proyecto7.png);}
 #Proyecto-destacado4 {background-image: url(../recursos/Proyecto6.png);}
 
-@media (min-width:767px){
-  #proy1 {display: flex;
-              flex-direction: row-reverse;
-            }
-  #proy3 {display: flex;
-              flex-direction: row-reverse;
-            }
-  #aside5, #aside7 {text-align: right;}
-  #aside6, #aside8 {text-align: left;}
-
-  .proyecto-destacado {border: 1px solid #c0c0c0}
-
-  .img-proyecto-destacado{
-                            height: 250px;
-                          }
-  .desc-proyecto-destacado { width: 100%;
-                            height: 250px;
-                           }
-                          }
-
 /*Boton ver mas colapsable*/
 
 .btn{ width: 100%;
@@ -456,15 +441,24 @@ footer {width:100%;
             color: black;
             }
 
-.card {background-color: #FFF0EC;
+.card {display:flex;
+       flex-direction: column;
+       align-items: center;
+       background-color: #FFF0EC;
        columns: black  ;
        margin-bottom: 1rem;
        text-align: center;
       }
 
-.vermas-img {width: 100%;
-             height: 120px;
-             background-image: url(../recursos/tira1.JPG);
+.tira-vermas-img {display: flex;
+                  width: 100%;
+                  height: fit-content;
+                  justify-content: center;
+                  }
+
+.vermas-img {width: 30vw;
+             height:30vw;
+             background-image: url(../recursos/vermas1.png);
              background-position: center;
              background-size: cover;
             }
@@ -476,6 +470,54 @@ footer {width:100%;
               box-shadow: 0 0 0 0.2rem #FFB5A5;
           }
 
+#imagentira1 {background-image:url(../recursos/vermas1.png);}
+#imagentira2 {background-image:url(../recursos/vermas2.png);}   
+#imagentira3 {background-image:url(../recursos/vermas3.png);}          
+#imagentira4 {background-image:url(../recursos/vermas4.png);}          
+#imagentira5 {background-image:url(../recursos/vermas5.png);}          
+#imagentira6 {background-image:url(../recursos/vermas6.png);}          
+#imagentira7 {background-image:url(../recursos/vermas7.png);}          
+#imagentira8 {background-image:url(../recursos/vermas8.png);}
+#imagentira9 {background-image:url(../recursos/vermas9.png);}
+#imagentira10 {background-image:url(../recursos/vermas10.png);}
+#imagentira11 {background-image:url(../recursos/vermas11.png);}
+#imagentira12 {background-image:url(../recursos/vermas12.png);}
+
+
+@media (min-width:767px) {
+  #proy1 {display: flex;
+              flex-direction: row-reverse;
+            }
+  #proy3 {display: flex;
+              flex-direction: row-reverse;
+            }
+  #aside5, #aside7 {text-align: right;}
+  #aside6, #aside8 {text-align: left;}
+
+  .proyecto-destacado {border: 1px solid #c0c0c0}
+
+  .img-proyecto-destacado{
+                            height: 250px;
+                          }
+  .desc-proyecto-destacado { width: 100%;
+                            height: 250px;
+                           }             
+  .card { display:flex;
+          flex-direction: row;
+          text-align: left;
+          justify-content: space-between;
+  }
+.info-vermas {width:25%;}
+
+.tira-vermas-img {width: 70%;
+                  height: auto;}
+
+.vermas-img {width:100%;
+              background-repeat: no-repeat;
+              background-size: contain}
+
+}
+  
 
 /*PAGINA CONTACTO*/
 
