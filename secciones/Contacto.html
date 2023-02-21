@@ -17,7 +17,7 @@
     
 </head>
 <body>
-
+  <a name="tope"></a>
     <!-- Inicio Navbar-->
     <nav class="navbar navbar-expand-md">
         <!-- Brand -->
@@ -82,20 +82,21 @@
                 <input type="text" placeholder="E-mail" name="e-mail" required>
 
                 <input type="text" placeholder="Su consulta" name="nombre" required class="textarea">
-
-                <p>Adjunta tus archivos (máximo 5MB, formatos: pdf, doc, docx, rar, zip, tar.)<p>
-                  
-                <input type="file" placeholder="Selecciona tus archivos" name="adjuntar">
                 <br>
-
-                <div class="checkbox-flex">
-                <input type="checkbox" id="terms" name="terms">
-                <label for="terms">He leido y acepto los terminos y servicios</label>
+                <input type="file" placeholder="Selecciona tus archivos" name="adjuntar" id="adjuntar-archivos">
+                <p>Adjunta tus archivos (máximo 5MB, formatos: pdf, doc, docx, rar, zip, tar.)</p>
+                
+                <div class="unir-check">
+                <input type="checkbox" id="tyc" name="tyc" value="tyc">
+                <label for="tyc">Acepto los términos y condiciones</label><br>
                 </div>
-
                 <input type="submit" class="boton-formulario">
 
             </form>
+            
+<!--Boton flotante subir-->
+<a href="#tope" class="boton-flotante"><i class="fa-solid fa-chevron-up" id="chevron"></i></a>
+<!--Fin boton flotante subir-->  
 
     </main>
     

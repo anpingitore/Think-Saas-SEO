@@ -47,6 +47,8 @@
 
 /*Carrusel Index*/
 
+html{scroll-behavior: smooth;}
+
 .carousel-item img { width: auto;
                      height: 60vh;
                      margin-bottom: 0;    
@@ -340,6 +342,26 @@ footer {width:100%;
 
 .cajon-consultas a:hover {font-weight: bold;}
 
+/*Boton flotante subir*/
+
+.boton-flotante {position: fixed;
+                 bottom: 20px;
+                right: 20px;
+                z-index: 1;
+                }
+#chevron  {     color:black;
+                  font-size: 20px;
+                  background-color: #ff856a7a;
+                  text-align: center;
+                  padding:0.5rem;
+            }
+
+.boton-flotante a {text-decoration: none;
+                   color: black;}
+
+.boton-flotante #chevron:hover {font-weight: bold;
+                         background-color:#ff613d;}
+
 /*PAGINA SERVICIOS*/
 
 .servicio { margin-top: 0.5rem;
@@ -522,7 +544,8 @@ footer {width:100%;
 /*PAGINA CONTACTO*/
 
 .introduccion-formulario {background-color: white;
-                          padding: 0.5rem;
+                          padding-left:1rem;
+                          padding-right:1rem;
                           h3 { text-align: center;
                             font-size: 16px;
                             font-style: normal;
@@ -533,34 +556,56 @@ footer {width:100%;
                       flex-direction: column;
                       height: auto;
                       width: 100%;
-                      padding: 2rem;
+                      padding-left:2rem;
+                      padding-right:2rem;
+                      margin-bottom: 2rem;
 
-                      input {height: 36px;
+                      input {height: 48px;
                         border: 2px solid grey;
                         border-radius: 4px;
                         margin-top: 0.5rem;
-                        margin-bottom: 0.5rem;}
+                        margin-bottom: 0.5rem;
+                        padding-left: 0.5rem;}
                     }
 
-.checkbox-flex {display: flex;
-  justify-content: center;
-}     
+#adjuntar-archivos { border: none;
+                     height: auto;
+                     margin:0;
+                     padding: 0;}
+
 
 form p {font-size: 16px;
-        font-style: normal;
+        font-style:italic;
+        margin:0;
     }
        
 .boton-formulario {height: auto;
                   width:40vw;
-                  padding: 0.4rem;
+                  padding-left: 0.5rem;
+                  padding-right: 0.5rem;
                   border: solid 2px black;
                   border-radius: 4px;
-                  font-size: 16px;
-                  margin: 1rem;
+                  font-size: 20px;
                   align-self: center;
-                  background-color: #FF856A;}
+                  background-color:#FFB5A5;}
 
-.boton-formulario:hover {font-weight: bold;}
+.boton-formulario:hover {font-weight: bold;
+                         background-color:#FF856A;}
+
+.unir-check {width: 100%;
+             height: fit-content;
+             display: flex;
+             align-content: center;}
+
+.unir-check label {align-self: center;
+                   margin:0;
+                   padding-left: 0.5rem;
+                   color:black;}
+
+#tyc { height: 24px;
+       width: 24px;
+       display: flex;
+       flex-direction:row;}
 
 @media (min-width:767px) {
   .formulario-contacto {
@@ -618,6 +663,6 @@ form p {font-size: 16px;
 
 @media (min-width:767px) {
   
-  .clientes-grid { grid-template-columns: repeat(3, 1fr);}
-  #clienteimpar {display: none;}
+  .clientes-grid { grid-template-columns: repeat(5, 1fr);}
+  .clientes-img {padding: 1rem;}
 }
