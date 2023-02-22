@@ -67,6 +67,7 @@ html {
 
 .carousel-caption {
   color: white;
+  text-shadow: 0px 4px 8px rgb(78, 78, 78);
 }
 
 /*FOOTER*/
@@ -236,10 +237,12 @@ footer {
 
 .input-news {
   text-align: left;
-  width: 80vw;
-  height: 40px;
+  width: 60vw;
+  height: 48px;
   margin-bottom: 1rem;
   padding: 0.5rem;
+  border: 2px solid grey;
+  border-radius: 4px;
 }
 
 /*Index con Boostrap*/
@@ -360,25 +363,33 @@ footer {
   background-image: url(../recursos/proy3.png);
 }
 
-/*Boton1*/
-.Boton1 {
-  height: auto;
-  width: 40vw;
-  padding: 0.4rem;
-  border: solid 2px black;
-  border-radius: 4px;
-  font-size: 16px;
-  margin: 1rem;
-  align-self: center;
-}
-
 .Ultimos-proyectos a {
   text-decoration: none;
   color: black;
 }
 
-.Ultimos-proyectos a:hover {
+/*Boton1*/
+.Boton1 {
+  height: auto;
+  width: 30vw;
+  padding: 0.4rem;
+  border: solid 2px black;
+  border-radius: 4px;
+  font-size: 18px;
+  margin: 1rem;
+  align-self: center;
+  background-color: #F0F0F0;
+  color: black;
+}
+
+.Boton1:hover {
   font-weight: bold;
+  background-color: #b1b1b1;
+}
+
+.Boton1 a {
+  text-decoration: none;
+  color: black;
 }
 
 /*Cajon consultas*/
